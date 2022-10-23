@@ -113,11 +113,9 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>SELENIUM ONLINE - BANK GURU</projectName>
+							<projectName>CUCUMBER FRAMEWORK</projectName>
 							<outputDirectory>${project.build.directory}/site/cucumber-reporting</outputDirectory>
-							<cucumberOutput>${project.build.directory}/site/cucumber.json</cucumberOutput>
-							<enableFlashCharts>true</enableFlashCharts>
-							<skippedFails>true</skippedFails>
+							<inputDirectory>${project.build.directory}/site/cucumber.json</inputDirectory>
 						</configuration>
 					</execution>
 				</executions>
