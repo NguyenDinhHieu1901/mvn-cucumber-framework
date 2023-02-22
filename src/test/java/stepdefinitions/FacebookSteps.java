@@ -5,7 +5,7 @@ import java.time.Duration;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -17,8 +17,8 @@ public class FacebookSteps {
 	
     @Given("^Open Facebook application$")
     public void open_facebook_application()  {
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.manage().window().maximize();
         driver.get("https://www.facebook.com/");
